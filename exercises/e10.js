@@ -4,8 +4,13 @@
 // getClientsWithLetterInName(bankAccounts, 'e') => ['Kevin', 'Steven', ...]
 
 export function getClientsWithLetterInName(array, letter) {
-  // Your code goes here...
-
+  let names = [];
+for (let item of array) {
+  if (item.name.toLowerCase().includes(letter.toLowerCase())) {
+    names.push(item.name);
+  }
+}
+  return names;
 }
 
 // === TEST YOURSELF ===

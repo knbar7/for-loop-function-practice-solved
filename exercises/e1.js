@@ -4,7 +4,13 @@
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
 export function getFirstTenNumbers() {
-  // Your code goes here...
+  let array = [];
+  let x = 1;
+  while(x < 11) {
+    array.push(x);
+    x++;
+  }
+  return array;
 
 }
 

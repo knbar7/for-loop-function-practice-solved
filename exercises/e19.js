@@ -5,8 +5,11 @@
 // NOTE: You can NOT use the array.reverse() method in your code
 
 export function reverseArray(array) {
-  // Your code goes here...
-
+  let reversedArray = [];
+  for (let item of array) {
+    reversedArray.unshift(item);
+  }
+  return reversedArray;
 }
 
 

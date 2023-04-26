@@ -4,8 +4,17 @@
 // getAverage([22, 45, 4, 65]) => 34
 
 export function getAverage(array) {
-  // Your code goes here...
-
+  let numberArray = [];
+  let sum = 0;
+  let average = 0;
+  for(let number of array) {
+    if (Number.isInteger(number)) {
+      numberArray.push(number);
+      sum+=number
+    }
+  }
+  average = sum / numberArray.length;
+  return average;
 }
 
 
